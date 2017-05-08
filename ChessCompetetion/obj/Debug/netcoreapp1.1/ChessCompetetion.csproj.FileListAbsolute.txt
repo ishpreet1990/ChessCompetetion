@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\ChessCompetetion\bin\Debug\netcoreapp1.1\ChessCompetetion.deps.json
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\ChessCompetetion\bin\Debug\netcoreapp1.1\ChessCompetetion.runtimeconfig.json
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\ChessCompetetion\bin\Debug\netcoreapp1.1\ChessCompetetion.runtimeconfig.dev.json
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\ChessCompetetion\bin\Debug\netcoreapp1.1\ChessCompetetion.dll
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\ChessCompetetion\obj\Debug\netcoreapp1.1\ChessCompetetion.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\ChessCompetetion\obj\Debug\netcoreapp1.1\ChessCompetetion.AssemblyInfo.cs
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\ChessCompetetion\bin\Debug\netcoreapp1.1\ChessCompetetion.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\ChessCompetetion\obj\Debug\netcoreapp1.1\ChessCompetetion.dll
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\ChessCompetetion\obj\Debug\netcoreapp1.1\ChessCompetetion.pdb

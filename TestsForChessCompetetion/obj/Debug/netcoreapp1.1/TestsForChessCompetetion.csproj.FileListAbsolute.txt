@@ -1,0 +1,14 @@
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\TestsForChessCompetetion.deps.json
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\TestsForChessCompetetion.runtimeconfig.json
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\TestsForChessCompetetion.runtimeconfig.dev.json
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\TestsForChessCompetetion.dll
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\TestsForChessCompetetion.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\ChessCompetetion.dll
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\bin\Debug\netcoreapp1.1\ChessCompetetion.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\obj\Debug\netcoreapp1.1\TestsForChessCompetetion.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\obj\Debug\netcoreapp1.1\TestsForChessCompetetion.AssemblyInfo.cs
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\obj\Debug\netcoreapp1.1\TestsForChessCompetetion.dll
+c:\users\administrator\documents\visual studio 2017\Projects\ChessCompetetion\TestsForChessCompetetion\obj\Debug\netcoreapp1.1\TestsForChessCompetetion.pdb
