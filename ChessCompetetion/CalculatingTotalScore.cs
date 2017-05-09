@@ -20,9 +20,7 @@ namespace ChessCompetetion
                 //regelvancurrentstand = naam van currentplayer zoeken in curent stand
                 // score van current palyer toevoegen in score van regelvancurrentstand
                 var context = new ChessContext();
-                var regelvancurrentstand = (from p in context.Players
-                                            where p.Name == currentPlayer.Name
-                                            select p).FirstOrDefault();
+                var regelvancurrentstand= context.Players.Where(p => p.Name == currentPlayer.Name).FirstOrDefault();
 
                 if (regelvancurrentstand == null)
                 {
