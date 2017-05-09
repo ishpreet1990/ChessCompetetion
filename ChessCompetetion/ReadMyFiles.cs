@@ -42,19 +42,8 @@ namespace ChessCompetetion
 
                         string readScoreline = reader.ReadLine();
 
-                        if (readScoreline.Contains("1/2"))
-                        {
-                            double n = 0.5;                       //read score
-                            player.Score = n;
-                        }
-                        else
-                        {
-                            string scorePlayer1 = readScoreline.Substring(0, readScoreline.IndexOf('-'));
-                            double n2 = Convert.ToInt64(scorePlayer1);                        //read score
-                            player.Score = n2;
-                        }
-
-                        string readEmptyLine = reader.ReadLine();
+                        ReadOnlyScore(player,player2,readScoreline);
+                        ReadABlankLine(reader);
                         context.Players.Add(player);
                         context.Players.Add(player2);
                     }
@@ -64,6 +53,32 @@ namespace ChessCompetetion
 
             }
         }
+
+        private static void ReadABlankLine(StreamReader reader)
+        {
+            string readEmptyLine = reader.ReadLine();
+        }
+
+        private static void ReadOnlyScore(Player player,Player player2, string readScoreline)
+        {
+            if (readScoreline.Contains("1/2"))
+            {
+                double n = 0.5;                       //read score
+                player.Score = n;
+                player2.Score = n;
+            }
+            else
+            {
+                string scorePlayer1 = readScoreline.Substring(0, readScoreline.IndexOf('-'));
+                string scorePlayer2 = readScoreline.Substring(readScoreline.IndexOf('-') + 1);
+                double n1 = Convert.ToInt64(scorePlayer1);
+                double n2 = Convert.ToInt64(scorePlayer2);
+                //read score
+                player.Score = n1;
+                player2.Score = n2;
+            }
+        }
+
         public IActionResult ReadNameAndScore(Stream uploadedFileStream)
         {
             ReadMyStuff(uploadedFileStream);
