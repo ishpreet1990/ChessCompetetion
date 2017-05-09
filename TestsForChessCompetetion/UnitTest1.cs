@@ -8,7 +8,7 @@ namespace TestsForChessCompetetion
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void ReadNameTest()
         {
             //act
             ReadMyFiles read = new ReadMyFiles();
@@ -22,7 +22,7 @@ namespace TestsForChessCompetetion
             Assert.Equal("Piet en Passant\t", readName);
         }
         [Fact]
-        public void Test2()
+        public void ReadScoreTest()
         {
             //act
             ReadMyFiles read = new ReadMyFiles();

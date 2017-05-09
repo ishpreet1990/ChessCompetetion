@@ -19,39 +19,54 @@ namespace ChessCompetetion
 
             }
         }
-        public string ReadMyStuff(Stream uploadedFileStream)
+        public List<Player> ReadMyStuff(Stream uploadedFileStream)
         {
             using (var reader = new StreamReader(uploadedFileStream))
             {
-                using (var context = new ChessContext())
+
+                List<Player> listOfPlayer = new List<Player>();
+                string titelline = ReadUpperTwoLines(reader);
+
+                while (!reader.EndOfStream)
                 {
-                    string titelline = reader.ReadLine();   //read title
-                    reader.ReadLine(); //   reads empty line
+                    ReadBord(reader);
+                    Player player, player2;
+                    ReadPlayerName(reader, out player, out player2);
 
-                    while (!reader.EndOfStream)
-                    {
-                        string bordline = reader.ReadLine();    // bordline can be discarded
+                    string readScoreline = reader.ReadLine();
 
-                        var player = new Player();
-                        string readname1 = reader.ReadLine();    // read name
-                        player.Name = readname1;
+                    ReadOnlyScore(player, player2, readScoreline);
+                    ReadABlankLine(reader);
 
-                        var player2 = new Player();
-                        string readname2 = reader.ReadLine();    //read name
-                        player2.Name = readname2;
-
-                        string readScoreline = reader.ReadLine();
-
-                        ReadOnlyScore(player,player2,readScoreline);
-                        ReadABlankLine(reader);
-                        context.Players.Add(player);
-                        context.Players.Add(player2);
-                    }
-                    context.SaveChanges();
-                    return titelline;
+                    listOfPlayer.Add(player);
+                    listOfPlayer.Add(player2);
                 }
+                return listOfPlayer;
 
             }
+        }
+
+        public void ReadPlayerName(StreamReader reader, out Player player, out Player player2)
+        {
+            player = new Player();
+            string readname1 = reader.ReadLine();    // read name
+            player.Name = readname1;
+
+            player2 = new Player();
+            string readname2 = reader.ReadLine();    //read name
+            player2.Name = readname2;
+        }
+
+        private static void ReadBord(StreamReader reader)
+        {
+            string bordline = reader.ReadLine();    // bordline can be discarded
+        }
+
+        private static string ReadUpperTwoLines(StreamReader reader)
+        {
+            string titelline = reader.ReadLine();   //read title
+            reader.ReadLine(); //   reads empty line
+            return titelline;
         }
 
         private static void ReadABlankLine(StreamReader reader)
@@ -59,7 +74,7 @@ namespace ChessCompetetion
             string readEmptyLine = reader.ReadLine();
         }
 
-        private static void ReadOnlyScore(Player player,Player player2, string readScoreline)
+        public void ReadOnlyScore(Player player,Player player2, string readScoreline)
         {
             if (readScoreline.Contains("1/2"))
             {
@@ -81,7 +96,9 @@ namespace ChessCompetetion
 
         public IActionResult ReadNameAndScore(Stream uploadedFileStream)
         {
-            ReadMyStuff(uploadedFileStream);
+            CalculatingTotalScore cal = new CalculatingTotalScore();
+            cal.AddScore(uploadedFileStream);
+          //  ReadMyStuff(uploadedFileStream);
             return new NoContentResult();
         }
     }
